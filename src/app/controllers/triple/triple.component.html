@@ -1,0 +1,10 @@
+<div id="content_Triple">
+  <br>
+  <p *ngFor="let message of tabRecupMessage">
+    <a href="" id="href">{{message.auteur}}</a> a écrit le {{message.date | date:'shortDate'}} à
+    {{message.date | date:'shortTime'}} : <br>
+    {{message.message}}
+  </p>
+
+  <br>
+</div>

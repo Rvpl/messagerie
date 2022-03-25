@@ -1,0 +1,21 @@
+<div class="container">
+  <form #ajoutMessage="ngForm" (ngSubmit)="envoiMessage(ajoutMessage.value)" id="form">
+    <div id="content_new">
+      <b id="newMess"> Nouveau message:</b>
+      <p>Pseudo:</p>
+      <input [class]="input"  id="auteur" type="text" name="auteur" ngModel [value]="ajoutMessage.value.auteur">
+      <br>
+      <p>Message:</p>
+      <textarea [class]="textarea" id="message" name="message" ngModel [value]="ajoutMessage.value.message"></textarea>
+      <span class="erreurMessage" *ngIf="erreurMessage !== ''"> {{erreurMessage}}</span>
+      <span  class="erreurMessage" *ngIf="erreurAll !== ''" > {{erreurAll}}</span>
+      <span class="erreurMessage" *ngIf="erreurPseudo !== ''" > <br>{{erreurPseudo}}</span>
+      <div id="btn">
+        <button class="button is-info" id="valider" >Valider</button>
+        <input class="button is-warning" value="Annuler" id="annuler" type="button" (click)="supprimerMessage()">
+      </div>
+    </div>
+  </form>
+</div>
+
+

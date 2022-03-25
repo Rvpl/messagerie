@@ -1,0 +1,33 @@
+#parActive{
+  font-family: -apple-system;
+  color: #A19A7F;
+}
+
+@media screen and (max-width: 769px) {
+  #parActive{
+    font-size: 15px;
+  }
+
+  p{
+    color:white;
+    font-size: 13px;
+  }
+
+}
+
+@media screen and (min-width:1408px) {
+
+  #parActive {
+    font-size: 20px;
+    padding-left: 30px;
+  }
+
+  a {
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+  }
+  p{
+    text-align: center;
+  }
+}

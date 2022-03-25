@@ -1,0 +1,14 @@
+ <div id="contentActive">
+   <b id="parActive">Personnes actives : </b>
+   <div id="divHref">
+       <div *ngIf="personnes.length === 0">
+       <p>Aucune personne active</p>
+     </div>
+     <div *ngIf="personnes.length > 0">
+       <a *ngFor=" let personne of personnes" href="">
+         <p>{{personne.auteur}}</p>
+       </a>
+     </div>
+
+   </div>
+ </div>

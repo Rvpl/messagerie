@@ -1,0 +1,95 @@
+#container{
+  display: grid;
+}
+
+@media screen and (max-width: 768px){
+  #container{
+    text-align: center;
+    display: grid;
+    grid-template: "titre titre"
+                  "personnes-actives"
+                  "message"
+                  "nouveau-messages";
+  }
+
+  app-entete{
+    padding-top: 10px;
+    font-size: 20px;
+    border : 1px solid #A19A7F;
+    border-radius: 30px;
+  }
+
+  app-actives{
+    padding-top: 20px;
+    max-height: 120px;
+    overflow-x: scroll;
+  }
+
+  app-new{
+    position: absolute;
+    margin-top: 410px;
+    width: 100%;
+  }
+
+  app-triple{
+    max-height: 250px;
+    overflow-x: scroll;
+  }
+
+}
+
+
+
+@media screen and (min-width:1408px) {
+
+
+
+#container{
+  display: grid;
+  grid-template: "titre titre"
+                  "personnes-actives messages"
+                  "personnes-actives nouveau-message";
+}
+
+app-entete {
+  grid-area: titre;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 30px;
+  border-top-left-radius : 50px;
+  border-top-right-radius : 50px;
+  border : 2px solid black;
+  font-family: system-ui;
+  max-width: 1339px;
+}
+ app-actives{
+   grid-area: personnes-actives;
+   border-bottom-left-radius: 100px;
+   border : 2px solid black;
+   max-width: 200px;
+ }
+
+ app-triple{
+   grid-area: messages;
+   padding-bottom: 30px;
+   border : 2px solid black;
+   min-height: 300px;
+   max-height: 300px;
+   overflow-y: scroll;
+ }
+
+ app-new{
+   grid-area: nouveau-message;
+   border-bottom-right-radius: 100px;
+   border : 2px solid black;
+   height: 320px;
+ }
+
+ app-new,app-triple{
+   min-width: 1139px;
+   max-width: 1139px;
+ }
+
+
+}
+

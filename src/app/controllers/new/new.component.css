@@ -1,0 +1,73 @@
+
+@media screen and (max-width:768px) {
+
+}
+
+
+@media screen and (min-width:1408px) {
+  #form {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  #message {
+    font-size: 20px;
+  }
+
+  #newMess {
+  text-align: center;
+    color: white;
+  }
+  p{
+    color: #A19A7F;
+  }
+
+  input, textarea {
+    color: burlywood;
+    width: 300px;
+  }
+
+  input {
+    height: 30px;
+  }
+
+  #message {
+    border-radius: 15px;
+  }
+
+  #auteur {
+    border-radius: 20px;
+  }
+
+  #btn {
+    display: grid;
+    grid-template: "valider annuler";
+    padding-top: 10px;
+    margin-left: 200px;
+  }
+
+  #valider,#annuler{
+    border-radius: 40px;
+  }
+  #annuler {
+    width: 100px;
+  }
+
+  #valider {
+    margin-top: -2px;
+    height: 32px;
+    width: 100px;
+  }
+
+  .erreurMessage {
+    color: red;
+    font-style: italic;
+    font-size: 10px;
+  }
+
+  #content_new {
+    width: 90%;
+  }
+
+}

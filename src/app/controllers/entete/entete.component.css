@@ -1,0 +1,16 @@
+@media screen and (max-width:768px) {
+  h1 {
+    font-style: oblique 40deg;
+    font-family: "Bangla MN";
+    color: white;
+  }
+}
+
+@media screen and (min-width:1408px) {
+  h1 {
+    font-style: oblique 40deg;
+    margin-top: -20px;
+    font-family: "Bangla MN";
+    color: #A19A7F;
+  }
+}
